@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { useParams } from "react-router";
 
 const QuoteDetails = () => {
@@ -6,10 +7,10 @@ const QuoteDetails = () => {
   console.log(params.productId);
 
   return (
-    <section>
+    <Fragment>
       <h1>Quote Detais</h1>
       <p> {params.quoteId}</p>
-    </section>
+    </Fragment>
   );
 };
 
