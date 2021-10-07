@@ -1,7 +1,18 @@
+import { useParams } from "react-router";
+
 const QuoteDetails = () => {
-    return (
-        <h1>Quote Detai Page</h1>
-    )
+  const params = useParams();
+
+  console.log(params.productId);
+
+  return (
+    <section>
+      <h1>Quote Detais</h1>
+      <p> {params.quoteId}</p>
+    </section>
+  );
 };
 
 export default QuoteDetails;
+
+// TODO: Extract quoteId and output it on the screen.
