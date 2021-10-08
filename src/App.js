@@ -1,21 +1,26 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 
-import AllQuotes from "./pages/AllQuotes";
-import QuoteDetails from "./pages/QuoteDetails";
 import Layout from "./components/layout/Layout";
-import NotFound from "./pages/NotFound";
+import LoadingSpinner from "./components/UI/LoadingSpinner";
 
 // -------- LAZY LOADING ----------
 
-const NewQuote = React.lazy(() => import('./pages/NewQuote'));
-
-
+const NewQuote = React.lazy(() => import("./pages/NewQuote"));
+const QuoteDetails = React.lazy(() => import('./pages/QuoteDetails'));
+const NotFound = React.lazy(() => import('./pages/NotFound'));
+const AllQuotes = React.lazy(() => import('./pages/AllQuotes'));
 
 function App() {
   return (
-    <div>
-      <Layout>
+    <Layout>
+      <Suspense
+        fallback={
+          <div className="centered">
+            <LoadingSpinner />
+          </div>
+        }
+      >
         <Switch>
           <Route path="/" exact>
             <Redirect to="/quotes" />
@@ -34,8 +39,8 @@ function App() {
           </Route>
           {/* similar to Angular, * is a wildcard path that matches ALL URLs, thus why we have at the end of the Switch block */}
         </Switch>
-      </Layout>
-    </div>
+      </Suspense>
+    </Layout>
   );
 }
 
