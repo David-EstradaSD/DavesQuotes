@@ -7,7 +7,7 @@ This is a simple "Quotes" app I created that stored "Famous Quotes" or quotes fr
 ### Technologies
 * React, JavaScript
 * ReactRouter libraries 
-* _Switch, Prompt, Redirect, BrowserRouter, Route, NavLink and Link_ components
+* _Suspense, Switch, Prompt, Redirect, BrowserRouter, Route, NavLink and Link_ components
 * _useRouteMatch, useHistory, useLocation, useParams_ custom hooks
 * _path, exact, and to_ built-in props
 * query parameters (_?_) with React Router
