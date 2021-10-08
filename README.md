@@ -1,7 +1,8 @@
 # ReactQuotes_RoutingAdvanced
 
 ### Overview
-This is a simple "Quotes" app I created that stored "Famous Quotes" or quotes from the public's creation. I built this app implementing "_single page application_" with React Routing, thus allowing different URL paths without having to leave the browser and send more Http requests.
+This is a simple "Quotes" app I created that stored "Famous Quotes" or quotes from the public's creation. I built this app implementing "_single page application_" with React Routing, thus allowing different URL paths without having to leave the browser and send more Http requests. I utilize [Google Firebase](https://firebase.google.com/)'s realtime database to send and fetch data.
+
 
 ### Technologies
 * React, JavaScript
@@ -11,6 +12,8 @@ This is a simple "Quotes" app I created that stored "Famous Quotes" or quotes fr
 * _path, exact, and to_ built-in props
 * query parameters (_?_) with React Router
 * URLSearchParams (_JS constructor func_)
+* [Google Firebase](https://firebase.google.com/) 
+
 
 
 ### How to Run
