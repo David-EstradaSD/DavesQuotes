@@ -19,4 +19,4 @@ This app is currently only ran locally. Just do the usual steps:
 * npm start 
 
 ### Lessons Learned
-This app taught me about setting up a project with multi-page domains / path URLs while still maintaining that React effect of "_Single Page Application_". This project was built with the assistance of a tutorial through Udemy that taught the _React framework_ ( 48+ hours ).
+This app taught me about setting up a project with multi-page domains / path URLs while still maintaining that React effect of "_Single Page Application_". This project was built with the assistance of a Udemy course that taught the _React framework_ ( 48+ hours ).
