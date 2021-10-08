@@ -16,13 +16,9 @@ const NewQuote = () => {
 
   const addQuoteHandler = (quoteData) => {
     sendRequest(quoteData);
-
-    history.push("/quotes");
-    // push() -- adds a new page on the stack of pages (allows user to go back to previous page)
-    // replace() -- like a 'redirect' where we change the page
   };
 
-  return <QuoteForm onAddQuote={addQuoteHandler} />;
+  return <QuoteForm isLoading={status === 'pending'} onAddQuote={addQuoteHandler} />;
 };
 
 export default NewQuote;
