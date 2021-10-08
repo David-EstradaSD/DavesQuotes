@@ -2,15 +2,27 @@ import { Fragment } from "react";
 import { useParams, Route } from "react-router-dom";
 
 import Comments from "../comments/Comments";
+import HighlightedQuote from "../quotes/HighlightedQuote";
+
+const DUMMY_QUOTES = [
+  { id: 'q1', author: 'David Estrada', text: "Adaptability is the key to success" },
+  { id: 'q2', author: 'Buddha', text: "Success is not the key to happiness, happiness is the key to success" },
+  { id: 'q3', author: 'Master Yoda', text: "Do or do not. There is not try" },
+];
 
 const QuoteDetails = () => {
   const params = useParams();
 
-  console.log(params.productId);
+  const quote = DUMMY_QUOTES.find(quote => quote.id === params.quoteId);
+  // recall that 'params' refers to the URL path "variable" name, thus here we're checking to see which quote.id === the URL quoteId
+
+  if (!quote) {
+    return <h3>No quote found!</h3>;
+  }
 
   return (
     <Fragment>
-      <h1>Quote Detais</h1>
+      <HighlightedQuote text={quote.text} author={quote.author} />
       <p> {params.quoteId}</p>
       <Route path={`/quotes/${params.quoteId}/comments`} >
         <Comments />
