@@ -1,17 +1,13 @@
 # ReactQuotes_RoutingAdvanced
 
 ### Overview
-This is a simple "Quotes" app I created to...
-
-// TODO:
-
- Specifically, this lesson taught how to build a multi-page "_single page application_" as to adhere to the React design of staying on the same web page without having to leave the browser and send more Http requests.
+This is a simple "Quotes" app I created that stored "Famous Quotes" or quotes from the public's creation. I built this app implementing "_single page application_" with React Routing, thus allowing different URL paths without having to leave the browser and send more Http requests.
 
 ### Technologies
 * React, JavaScript
 * ReactRouter libraries 
 * _Switch, Redirect, BrowserRouter, Route, NavLink and Link_ components
-* _useParams_ custom hook 
+* _useHistory, useParams_ custom hooks
 * _path, exact, and to_ built-in props
 
 
