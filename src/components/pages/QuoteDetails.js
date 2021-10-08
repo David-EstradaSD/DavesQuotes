@@ -11,7 +11,7 @@ const QuoteDetails = () => {
   console.log(match); // we can see in DevTools that ReactRouter constructs the path props and URL props strings for us! So we don't have to manually write it out in our JSX
   const params = useParams();
 
-  const { quoteId } = params; // use object destructuring to extract ONLY the quoteId from params so that we only add quoteId as a parameter in useEffect BELOW instead of params.quoteId (our params object) which may result in re-rendering the page for other existing params properties 
+  const { quoteId } = params; // use object destructuring to extract ONLY the quoteId from params so that we only add quoteId as a dependency in useEffect BELOW instead of params.quoteId (our params object) which may result in re-rendering the page for other existing params properties 
 
   const {
     sendRequest,
