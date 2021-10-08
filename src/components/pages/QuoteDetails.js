@@ -15,7 +15,7 @@ const QuoteDetails = () => {
       <Route path={`/quotes/${params.quoteId}/comments`} >
         <Comments />
       </Route>
-      {/* <Route path='/quotes/:quoteId/comments'></Route> */} 
+      {/* <Route path='/quotes/:quoteId/comments'></Route> // this is another way */} 
     </Fragment>
   );
 };
