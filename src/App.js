@@ -3,6 +3,7 @@ import AllQuotes from "./components/pages/AllQuotes";
 import QuoteDetails from "./components/pages/QuoteDetails";
 import NewQuote from "./components/pages/NewQuote";
 import Layout from "./components/layout/Layout";
+import NotFound from './components/pages/NotFound';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
           <Route path="/new-quote">
             <NewQuote />
           </Route>
+          <Route path='*'>
+            <NotFound /> 
+          </Route>
+          {/* similar to Angular, * is a wildcard path that matches ALL URLs, thus why we have at the end of the Switch block */}
         </Switch>
       </Layout>
     </div>
