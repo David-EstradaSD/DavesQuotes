@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { useParams, Route, Link } from "react-router-dom";
+import { useParams, useRouteMatch, Route, Link } from "react-router-dom";
 
 import Comments from "../comments/Comments";
 import HighlightedQuote from "../quotes/HighlightedQuote";
@@ -19,6 +19,8 @@ const DUMMY_QUOTES = [
 ];
 
 const QuoteDetails = () => {
+  const match = useRouteMatch();
+  console.log(match) // we can see in DevTools that ReactRouter constructs the path props and URL props strings for us! So we don't have to manually write it out in our JSX
   const params = useParams();
 
   const quote = DUMMY_QUOTES.find((quote) => quote.id === params.quoteId);
@@ -31,17 +33,18 @@ const QuoteDetails = () => {
   return (
     <Fragment>
       <HighlightedQuote text={quote.text} author={quote.author} />
-      <Route path={`/quotes/${params.quoteId}`} exact>
+      <Route path={match.path} exact>
         <div className="centered">
-          <Link className="btn--flat" to={`/quotes/${params.quoteId}/comments`}>
+          <Link className="btn--flat" to={`${match.url}/comments`}>
             Load Comments
           </Link>
         </div>
       </Route>
-      <Route path={`/quotes/${params.quoteId}/comments`}>
+      <Route path={`${match.path}/comments`}>
+        {/* match.path is a placeholder j */}
         <Comments />
       </Route>
-      {/* <Route path='/quotes/:quoteId/comments'></Route> // this is another way */}
+      {/* <Route path='/quotes/:quoteId/comments'></Route> // manual writing of the URL path string */}
     </Fragment>
   );
 };
