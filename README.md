@@ -13,13 +13,12 @@ This is a simple "Quotes" app I created that stored "Famous Quotes" or quotes fr
 * query parameters (_?_) with React Router
 * URLSearchParams (_JS constructor func_)
 * [Google Firebase](https://firebase.google.com/) 
+* Lazy Loading ( _code optimization_)
 
 
 
-### How to Run
-This app is currently only ran locally. Just do the usual steps:
-* git clone the repo
-* npm start 
+### How to Run TODO: // 
+This app is currently deployed to [LINK HERE](https://google.com/)
 
 ### Lessons Learned
 This app taught me about setting up a project with multi-page domains / path URLs while still maintaining that React effect of "_Single Page Application_". This project was built with the assistance of a Udemy course that taught the _React framework_ ( 48+ hours ).
