@@ -14,7 +14,6 @@ This is a simple "_Dave's Quotes_" app I created that stored "Famous Quotes" or 
 * URLSearchParams (_JS constructor func_)
 * [Google Firebase](https://firebase.google.com/) (_Hosting & Realtime Database_)
 * Lazy Loading ( _code optimization_)
-* 
 
 
 
