@@ -16,7 +16,7 @@
 * Lazy Loading ( _code optimization_)
 
 ### How to Run
-This is currently deployed and WAS hosted by Google Firebase. NOTE: The realtime database has expired and thus the data cannot be persisted. I haven't found the need to reconnect a database at this time. 
+This app is currently deployed and WAS hosted by Google Firebase. NOTE: The realtime database has expired and thus the data cannot be persisted. I haven't found the need to reconnect a database at this time. 
 
 ### Lessons Learned
 This app taught me about setting up a project with multi-page domains / path URLs while still maintaining that React effect of "_Single Page Application_". I learned about so many new custom hooks, components, and associated built-in props. What's more, I learned how to implement Lazy Loading to ensure website optimization! This project was built with the assistance of a Udemy course that taught the _React framework_ ( 48+ hours ).
