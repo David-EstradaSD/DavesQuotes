@@ -1,4 +1,4 @@
-# [Dave's Quotes](https://react-udemy-http-fd441.web.app/quotes) (SPA with React Routing)
+# _Dave's Quotes_ (SPA with React Routing)
 
 ### Overview
 "_Dave's Quotes_" is a simple app I created that displays "Famous Quotes" or quotes from the public's creation. I built this app implementing "_single page application_" with React Routing, thus allowing different URL paths without having to leave the browser and send more Http requests. I utilize [Google Firebase](https://firebase.google.com/)'s realtime database to send and fetch quotes and quote comments data, as well as for the site hosting.
@@ -18,7 +18,7 @@
 
 
 ### How to Run
-This app is currently deployed and hosted by Google Firebase. You can find it here:
+This app is currently deployed and WAS hosted by Google Firebase. NOTE: The realtime database has expired and thus the data cannot be persisted. I haven't found the need to reconnect a database at this time. You can find it here:
 * [Dave's Quotes](https://react-udemy-http-fd441.web.app/quotes)
 
 ### Lessons Learned
